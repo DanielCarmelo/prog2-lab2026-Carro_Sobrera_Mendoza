@@ -1,13 +1,15 @@
-# [Control de Stock]
+# [Control de Stock de artículos de tienda]
 
 Trabajo de Programación 2 del CeRP del Suroeste, modalidad semipresencial.
 Docente: Domingo Pérez. Año: 2026.
 
 ## Integrantes
 
-- [Pendiente: Daniel Mendoza].
-- [Pendiente: Cristian Carro].
-- [Solo si corresponde: Gerardo Sobrera].
+-  Daniel Mendoza.
+- Cristian Carro.
+- Gerardo Sobrera.
+
+La aplicación permite gestionar artículos de una tienda mediante una interfaz gráfica desarrollada en Java Swing. El sistema registra, modifica, elimina, busca, y almacena artículos en formato JSON manteniendola separación de responsabilidades mediante el patrón MVC y una capa de fachada. Los datos se conservan entre ejecuciones gracias a la persistencia local.
 
 ## Estado del proyecto
 
@@ -25,11 +27,15 @@ detalla los requisitos.
 
 ## Problema y destinatarios
 
-**Pendiente de definir:** qué problema abordamos, en qué contexto se presenta
-y quiénes utilizarán la aplicación.
-
+Este proyecto está orientado al control de stock de comercios pequeños y medianos que necesitan  administrar mercadería de manera simple y eficiente. 
+El sistema permite registrar productos utilizando códigos de barras EAN-13, controlar existencias disponibles y gestionar información relevante para la comercialización de artículos
 ## Utilidad de la solución
-
+Los destinatarios son: 
+                      Almacenes
+                      Minimercados
+                      Autoservicios
+                      Kioscos
+                      Comercios de barrios
 **Pendiente de fundamentar:** qué tareas facilitará el sistema y qué ventajas
 ofrecerá a sus destinatarios.
 
