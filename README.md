@@ -150,13 +150,38 @@ Cuando el usuario registra un artículo:
 | Reiniciar aplicación | Conserva datos JSON | Correcto |
 
 ## Limitaciones conocidas 
-El sistema utiliza almacenamiento local JSON y no una base de datos.
-No permite acceso simultáneo multiusuario.
-No incorpora autenticación de usuarios.
-No gestiona ventas ni facturación.
-Solo administra existencias y datos básicos de articulos.
+- El sistema utiliza almacenamiento local JSON y no una base de datos.
+- No permite acceso simultáneo multiusuario.
+- No incorpora autenticación de usuarios.
+- No gestiona ventas ni facturación.
+- Solo administra existencias y datos básicos de articulos.
 
+## Procedencia del código y recursos utilizados.
+# Base docente
+- Arquitectura MVC.
+- Fachada de acceso.
+- Persistencia JSON.
+- Configuración Maven.
 
+# Trabajo del equipo.
+- Adaptación del dominio al control de stock.
+- Implementación de la entidad Artículo.
+- Validaciones de negocio.
+- Gestión de categorías por sección.
+- Filtros de búsqueda.
+- Interfaz gráfica completa.
+- Persistencia de artículos.
+
+# Biblotecas.
+- Gson 2.13.2.
+- Java Swing.
+
+# Herramientas utilizadas.
+- Visual Studio Code.
+- Git y GitHub.
+- Documentación oficial de Java.
+- Documentación oficial de Gson.
+- Microsoft Copilot como apoyo para documentación, revisión y generación de ejemplos de código.
 
 
 
