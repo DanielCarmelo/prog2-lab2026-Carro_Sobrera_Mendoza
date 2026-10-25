@@ -59,9 +59,9 @@ categorías y operaciones propias del problema.
 
 | Validación requerida | Regla de nuestro proyecto | Estado |
 | --- | --- | --- |
-| Primera validación | Pendiente de definir. | Sin implementar. |
-| Segunda validación | Pendiente de definir. | Sin implementar. |
-| Tercera validación, propia del problema | Pendiente de definir. | Sin implementar. |
+| Código EAN-13 válido. | Debe contener exactamente 13 digitos numéricos. | Implementada. |
+| Descripción obligatoria | No puede estar vacia ni contener solo espacios. | Implementada. |
+| Precio y stock válidos | Precio mayor a 0 y stock mayor o igual a 0. | Implementada. |
 
 También falta implementar el identificador único, la selección y modificación,
 la eliminación con confirmación, la búsqueda, la limpieza del formulario y la
