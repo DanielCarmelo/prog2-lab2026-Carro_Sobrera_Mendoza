@@ -183,6 +183,15 @@ Cuando el usuario registra un artículo:
 - Documentación oficial de Gson.
 - Microsoft Copilot como apoyo para documentación, revisión y generación de ejemplos de código.
 
+## Aportes de cada integrante.
+
+| Integrante | Aportes realizados |
+| Cristian Carro | Participó en el diseño del modelo de datos, definición de categorías comerciales, pruebas de funcionamiento y validación de reglas de negocio relacionadas con los artículos y el stock. |
+| Gerardo Sobrera | Colaboró en el desarrollo de la interfaz gráfica Swing, diseño de formularios, organización de componentes visuales y realización de pruebas funcionales del sistema.|
+| Daniel Mendoza | Coordinó la integración general del proyecto, implementó la persistencia JSON, documentación técnica del repositorio, validaciones principales y organización de la arquitectura MVC con fachada. |
+
+Todos los integrantes participaron en las pruebas, revisión del funcionamiento general y preparación de la presentación final del proyecto.
+
 
 
 
