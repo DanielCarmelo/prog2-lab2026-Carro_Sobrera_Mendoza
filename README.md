@@ -42,13 +42,14 @@ La aplicación facilita: Controlar el inventariodisponible. Registrar ingresos d
 
 La entidad principal del sistema es Artículo, cuyos atributos son:
 
-|Atributo| Descripción|
-|codigoBarras|Código EAN-13 de 13 dígitos|
-|idSeccion|Categoría derivada de los primeros dos dígitos del código|
-|descripcion|Descripción del artículo|
-|precioCosto|Precio de compra al proveedor|
-|oferta|Indica si el artículo está en oferta|
-|stock|Cantidad disponible|
+| Atributo | Descripción |
+| --- | --- |
+| codigoBarras | Código EAN-13 de 13 dígitos|
+| idSeccion | Categoría derivada de los primeros dos dígitos del código|
+| descripcion | Descripción del artículo |
+| precioCosto | Precio de compra al proveedor |
+| oferta | Indica si el artículo está en oferta |
+| stock | Cantidad disponible |
 
 
 
