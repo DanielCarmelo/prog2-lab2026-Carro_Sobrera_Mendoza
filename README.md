@@ -36,8 +36,7 @@ Los destinatarios son:
                       Autoservicios
                       Kioscos
                       Comercios de barrios
-**Pendiente de fundamentar:** qué tareas facilitará el sistema y qué ventajas
-ofrecerá a sus destinatarios.
+La alicación facilita: Controlar el inventariodisponible. Registrar ingresos de mercadería. Mantener información organizada mediante categorías. Detectar atículos con bajo stock. Identificar productos en oferta. Evitar errores en el registro de artículos mediante validaciones automáticas. Conservar los datos mediante almacenamiento JSON.
 
 ## Adaptación del modelo y reglas
 
