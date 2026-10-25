@@ -117,8 +117,9 @@ vista para mostrarlos en la tabla. La vista no lee ni escribe archivos.
 **Pendiente de documentar:** el recorrido completo de una operación de gestión
 implementada por nuestro equipo.
 Organización de paquetes y recorrido de una operación
-Paquete	Responsabilidadapp	Inicio de la aplicación
-modelo	Entidades y reglas de negocio
+Paquete	Responsabilidad
+app	Inicio de la aplicación.
+modelo	Entidades y reglas de negocio.
 vista	Interfaz gráfica
 controlador	Gestión de eventos
 fachada	Operaciones del sistema
