@@ -125,18 +125,6 @@ Cuando el usuario registra un artículo:
 5.La persistencia guarda la información en JSON.
 6.La vista actualiza la tabla de resultados.
 
-Acción | Resultado esperado | Resultado obtenido
-Crear artículo válido | Registro y almacenamiento correcto | Correcto
-Registrar EAN duplicado | Mensaje de error | Correcto
-Registrar EAN inválido | Mensaje de error | Correcto
-Precio menor o igual a cero | Rechazo de operación | Correcto
-Modificar artículo | Actualización sin duplicar | Correcto
-Cancelar eliminación | Conserva registro | Correcto
-Confirmar eliminación | Elimina registro |Correcto
-Filtrar por oferta | Muestra artículos en oferta | Correcto
-Reiniciar aplicación | Conserva datos JSON | Correcto
-
-
 ## Instrucciones de ejecución
 
 ### Requisitos
