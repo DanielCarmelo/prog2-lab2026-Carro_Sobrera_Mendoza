@@ -9,10 +9,9 @@ Docente: Domingo Pérez. Año: 2026.
 - Cristian Carro.
 - Gerardo Sobrera.
 
-La aplicación permite gestionar artículos de una tienda mediante una interfaz gráfica desarrollada en Java Swing. El sistema registra, modifica, elimina, busca, y almacena artículos en formato JSON manteniendola separación de responsabilidades mediante el patrón MVC y una capa de fachada. Los datos se conservan entre ejecuciones gracias a la persistencia local.
-
 ## Estado del proyecto
 
+La aplicación permite gestionar artículos de una tienda mediante una interfaz gráfica desarrollada en Java Swing. El sistema registra, modifica, elimina, busca, y almacena artículos en formato JSON manteniendola separación de responsabilidades mediante el patrón MVC y una capa de fachada. Los datos se conservan entre ejecuciones gracias a la persistencia local.
 Partimos del prototipo docente de un gestor de registros en Java y Swing,
 organizado con MVC, fachada y persistencia en JSON.
 
@@ -29,13 +28,14 @@ detalla los requisitos.
 
 Este proyecto está orientado al control de stock de comercios pequeños y medianos que necesitan  administrar mercadería de manera simple y eficiente. 
 El sistema permite registrar productos utilizando códigos de barras EAN-13, controlar existencias disponibles y gestionar información relevante para la comercialización de artículos
-## Utilidad de la solución
 Los destinatarios son: 
                       Almacenes
                       Minimercados
                       Autoservicios
                       Kioscos
                       Comercios de barrios
+## Utilidad de la solución
+
 La alicación facilita: Controlar el inventariodisponible. Registrar ingresos de mercadería. Mantener información organizada mediante categorías. Detectar atículos con bajo stock. Identificar productos en oferta. Evitar errores en el registro de artículos mediante validaciones automáticas. Conservar los datos mediante almacenamiento JSON.
 
 ## Adaptación del modelo y reglas
@@ -114,7 +114,28 @@ controlador	Gestión de eventos
 fachada	Operaciones del sistema
 persistencia	Lectura y escritura JSON
 datos	Archivo de almacenamiento
-Recorrido de una operación
+
+##Recorrido de una operación
+
+Cuando el usuario registra un artículo:
+1.La vista captura los datos.
+2.El controlador recibe el evento.
+3.La fachada ejecuta las validaciones.
+4.El modelo representa el artículo.
+5.La persistencia guarda la información en JSON.
+6.La vista actualiza la tabla de resultados.
+
+Acción | Resultado esperado | Resultado obtenido
+Crear artículo válido | Registro y almacenamiento correcto | Correcto
+Registrar EAN duplicado | Mensaje de error | Correcto
+Registrar EAN inválido | Mensaje de error | Correcto
+Precio menor o igual a cero | Rechazo de operación | Correcto
+Modificar artículo | Actualización sin duplicar | Correcto
+Cancelar eliminación | Conserva registro | Correcto
+Confirmar eliminación | Elimina registro |Correcto
+Filtrar por oferta | Muestra artículos en oferta | Correcto
+Reiniciar aplicación | Conserva datos JSON | Correcto
+
 
 ## Instrucciones de ejecución
 
