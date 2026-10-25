@@ -57,6 +57,11 @@ También falta implementar el identificador único, la selección y modificació
 la eliminación con confirmación, la búsqueda, la limpieza del formulario y la
 actualización del listado. La lectura y escritura JSON están disponibles como
 infraestructura; falta integrar el guardado con las operaciones.
+La entidad principal del sistema es Artículo, cuyos atributos son: Atributo DscripcióncodigoBarras Código EAN-13 de 13 dígitos id SeccionCategoría derivada de los primeros dos dígitos del código descripción Descripción del artículo 
+precioCosto Precio de compra al proveedor
+oferta indica si el artículo esta en oferta 
+stock Cantidad disponible
+
 
 ## Componentes gráficos
 
