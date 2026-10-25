@@ -126,7 +126,7 @@ fachada	Operaciones del sistema
 persistencia	Lectura y escritura JSON
 datos	Archivo de almacenamiento
 
-##Recorrido de una operación
+## Recorrido de una operación
 
 Cuando el usuario registra un artículo:
 1.La vista captura los datos.
@@ -135,6 +135,44 @@ Cuando el usuario registra un artículo:
 4.El modelo representa el artículo.
 5.La persistencia guarda la información en JSON.
 6.La vista actualiza la tabla de resultados.
+
+## Pruebas realizadas
+Acción / Resultado esperado / Resultado obtenido
+Crear artículo válido / Registro y almacenamiento correcto / Correcto
+Registrar EAN duplicado / Mensaje de error / Correcto
+Registrar EAN inválido / Mensaje de error / Correcto
+Precio menor o igual a cero / Rechazo de operación / Correcto
+Modificar artículo / Actualización sin duplicar / Correcto
+Cancelar eliminación / Conserva registro / Correcto
+Confirmar eliminación / Elimina registro / Correcto
+Filtrar por oferta/ Muestra artículos en oferta / Correcto
+Reiniciar aplicación / Conserva datos JSON / Correcto
+
+## Limitaciones conocidas 
+El sistema utiliza almacenamiento local JSON y no una base de datos.
+No permite acceso simultáneo multiusuario.
+No incorpora autenticación de usuarios.
+No gestiona ventas ni facturación.
+Solo administra existencias y datos básicos de articulos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Instrucciones de ejecución
 
