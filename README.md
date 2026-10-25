@@ -36,12 +36,21 @@ Los destinatarios son:
                       Comercios de barrios
 ## Utilidad de la solución
 
-La alicación facilita: Controlar el inventariodisponible. Registrar ingresos de mercadería. Mantener información organizada mediante categorías. Detectar atículos con bajo stock. Identificar productos en oferta. Evitar errores en el registro de artículos mediante validaciones automáticas. Conservar los datos mediante almacenamiento JSON.
+La aplicación facilita: Controlar el inventariodisponible. Registrar ingresos de mercadería. Mantener información organizada mediante categorías. Detectar atículos con bajo stock. Identificar productos en oferta. Evitar errores en el registro de artículos mediante validaciones automáticas. Conservar los datos mediante almacenamiento JSON.
 
 ## Adaptación del modelo y reglas
 
-El modelo inicial contiene registros con identificador, nombre, categoría y
-estado activo.
+La entidad principal del sistema es Artículo, cuyos atributos son:
+
+|Atributo| Descripción|
+|codigoBarras|Código EAN-13 de 13 dígitos|
+|idSeccion|Categoría derivada de los primeros dos dígitos del código|
+|descripcion|Descripción del artículo|
+|precioCosto|Precio de compra al proveedor|
+|oferta|Indica si el artículo está en oferta|
+|stock|Cantidad disponible|
+
+
 
 **Pendiente de implementar y documentar:** qué representará un registro en
 nuestro proyecto, qué atributos agregaremos o cambiaremos y cuáles serán las
