@@ -61,6 +61,16 @@ La entidad principal del sistema es Artículo, cuyos atributos son: Atributo Dsc
 precioCosto Precio de compra al proveedor
 oferta indica si el artículo esta en oferta 
 stock Cantidad disponible
+Validaciones implementadas
+Validación requerida	Regla del proyecto	EstadoCódigo EAN-13 válido	Debe contener exactamente 13 dígitos numéricos	Implementada
+Descripción obligatoria	No puede estar vacía ni contener solo espacios	Implementada
+Precio y stock válidos	Precio mayor a 0 y stock mayor o igual a 0	Implementada
+
+Además:
+
+No se permiten códigos EAN duplicados.
+Los primeros dos dígitos deben corresponder a una sección válida.
+Las modificaciones mantienen el código EAN original.
 
 
 ## Componentes gráficos
@@ -72,9 +82,9 @@ Los tres tipos nuevos todavía no fueron elegidos ni implementados:
 
 | Componente nuevo | Dato o acción real que permitirá gestionar | Estado |
 | --- | --- | --- |
-| Pendiente de elegir. | Pendiente de definir. | Sin implementar. |
-| Pendiente de elegir. | Pendiente de definir. | Sin implementar. |
-| Pendiente de elegir. | Pendiente de definir. | Sin implementar. |
+| JSpinner |Gestión precisa del stock | Sin implementar. |
+| JFormattedTextField |Ingreso y validación del precio | Sin implementar. |
+| Ingreso y validación del precio | Filtros rápidos de búsqueda| Sin implementar. |
 
 ## Organización de paquetes y recorrido de una operación
 
@@ -96,6 +106,15 @@ vista para mostrarlos en la tabla. La vista no lee ni escribe archivos.
 
 **Pendiente de documentar:** el recorrido completo de una operación de gestión
 implementada por nuestro equipo.
+Organización de paquetes y recorrido de una operación
+Paquete	Responsabilidadapp	Inicio de la aplicación
+modelo	Entidades y reglas de negocio
+vista	Interfaz gráfica
+controlador	Gestión de eventos
+fachada	Operaciones del sistema
+persistencia	Lectura y escritura JSON
+datos	Archivo de almacenamiento
+Recorrido de una operación
 
 ## Instrucciones de ejecución
 
