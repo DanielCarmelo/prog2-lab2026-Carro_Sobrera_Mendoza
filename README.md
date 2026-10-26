@@ -15,14 +15,6 @@ La aplicación permite gestionar artículos de una tienda mediante una interfaz 
 Partimos del prototipo docente de un gestor de registros en Java y Swing,
 organizado con MVC, fachada y persistencia en JSON.
 
-**Actualmente solo está disponible el prototipo.** La ventana muestra tres
-registros de ejemplo del archivo JSON. Los botones Registrar, Modificar,
-Eliminar, Buscar, Limpiar y Guardar muestran un aviso de funcionalidad pendiente.
-Seleccionar una fila todavía no carga sus datos en el formulario.
-
-Los apartados marcados como **Pendiente** deben completarse con nuestro
-desarrollo real antes de entregar. La [consigna del laboratorio](docs/letra.md)
-detalla los requisitos.
 
 ## Problema y destinatarios
 
@@ -53,10 +45,6 @@ La entidad principal del sistema es Artículo, cuyos atributos son:
 
 
 
-**Pendiente de implementar y documentar:** qué representará un registro en
-nuestro proyecto, qué atributos agregaremos o cambiaremos y cuáles serán las
-categorías y operaciones propias del problema.
-
 | Validación requerida | Regla de nuestro proyecto | Estado |
 | --- | --- | --- |
 | Código EAN-13 válido. | Debe contener exactamente 13 digitos numéricos. | Implementada. |
@@ -67,6 +55,7 @@ También falta implementar el identificador único, la selección y modificació
 la eliminación con confirmación, la búsqueda, la limpieza del formulario y la
 actualización del listado. La lectura y escritura JSON están disponibles como
 infraestructura; falta integrar el guardado con las operaciones.
+
 La entidad principal del sistema es Artículo, cuyos atributos son: Atributo DscripcióncodigoBarras Código EAN-13 de 13 dígitos id SeccionCategoría derivada de los primeros dos dígitos del código descripción Descripción del artículo 
 precioCosto Precio de compra al proveedor
 oferta indica si el artículo esta en oferta 
@@ -88,7 +77,9 @@ Las modificaciones mantienen el código EAN original.
 La base incluye JTextField, JComboBox, JCheckBox, JButton y JTable.
 JLabel y los contenedores de apoyo no cuentan para alcanzar el mínimo solicitado.
 
-Los tres tipos nuevos todavía no fueron elegidos ni implementados:
+## Los tres tipos nuevos  implementados:
+
+
 
 | Componente nuevo | Dato o acción real que permitirá gestionar | Estado |
 | --- | --- | --- |
@@ -114,17 +105,6 @@ el controlador solicita la carga a la fachada; la fachada utiliza la
 persistencia para leer el archivo; y el controlador entrega los registros a la
 vista para mostrarlos en la tabla. La vista no lee ni escribe archivos.
 
-**Pendiente de documentar:** el recorrido completo de una operación de gestión
-implementada por nuestro equipo.
-Organización de paquetes y recorrido de una operación
-Paquete	Responsabilidad
-app	Inicio de la aplicación.
-modelo	Entidades y reglas de negocio.
-vista	Interfaz gráfica
-controlador	Gestión de eventos
-fachada	Operaciones del sistema
-persistencia	Lectura y escritura JSON
-datos	Archivo de almacenamiento
 
 ## Recorrido de una operación
 
@@ -335,27 +315,7 @@ verificar como parte de esta actualización.
 | Leer y escribir registros en un archivo temporal. | Recuperar todos los atributos, incluidos caracteres con tildes. | Correcto. |
 | Guardar desde la fachada tras una carga fallida. | Rechazar el guardado sin reemplazar el archivo. | Correcto. |
 
-### Pruebas de nuestro desarrollo
 
-**Pendiente:** realizar estas pruebas y reemplazar los resultados por lo
-realmente observado. No se consideran aprobadas por estar incluidas en la tabla.
-
-| Acción | Resultado esperado | Resultado obtenido |
-| --- | --- | --- |
-| Crear un registro válido. | Aparece en el listado con identificador único. | Pendiente: alta sin implementar. |
-| Incumplir la primera validación. | Informar el motivo y permitir corregir. | Pendiente: validación sin implementar. |
-| Incumplir la segunda validación. | Informar el motivo y permitir corregir. | Pendiente: validación sin implementar. |
-| Incumplir la regla propia del problema. | Rechazar la operación y explicar el motivo. | Pendiente: regla sin implementar. |
-| Modificar un registro seleccionado. | Actualizarlo conservando su identificador, sin duplicarlo. | Pendiente: modificación sin implementar. |
-| Cancelar una eliminación y confirmar otra con un registro de prueba. | Conservar el primero y eliminar solo el confirmado. | Pendiente: eliminación sin implementar. |
-| Aplicar una búsqueda o filtro. | Mostrar únicamente los registros que cumplen el criterio. | Pendiente: búsqueda sin implementar. |
-| Limpiar el formulario. | Dejarlo preparado para una nueva operación. | Pendiente: limpieza sin implementar. |
-| Crear y modificar datos, guardar, cerrar y volver a abrir. | Recuperar los cambios desde el JSON. | Pendiente: guardado sin integrar. |
-| Iniciar sin JSON y con JSON inválido, usando copias de prueba. | Mantener el manejo de errores de la base. | Pendiente: volver a comprobar tras nuestros cambios. |
-
-Las limitaciones actuales son las funciones pendientes descritas en este
-documento. **Pendiente:** actualizar esta sección con las limitaciones reales
-de nuestra entrega.
 
 ## Procedencia del código y recursos utilizados
 
