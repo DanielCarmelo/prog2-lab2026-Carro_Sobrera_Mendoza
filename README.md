@@ -1,4 +1,4 @@
-# [Control de Stock de artículos de tienda]
+# Control de Stock de artículos de tienda
 
 Trabajo de Programación 2 del CeRP del Suroeste, modalidad semipresencial.
 Docente: Domingo Pérez. Año: 2026.
