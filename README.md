@@ -213,16 +213,8 @@ Comprobar que `java -version`, `javac -version` y `.\mvnw.cmd -version`
 
 ### Descargar el proyecto
 
-**Pendiente:** reemplazar `USUARIO` y `REPOSITORIO` por los datos del repositorio
-del equipo antes de entregar.
-
-```text
-git clone https://github.com/USUARIO/REPOSITORIO.git
-cd REPOSITORIO
-```
-
-El nombre del repositorio debe seguir el formato indicado en la consigna:
-`prog2-lab2026-apellido1_apellido2`.
+El nombre del repositorio sigue el formato indicado en la consigna:
+`(https://github.com/DanielCarmelo/prog2-lab2026-Carro_Sobrera_Mendoza)`.
 
 Ejecutar los siguientes comandos desde la raíz del proyecto, donde se
 encuentra [pom.xml](pom.xml).
