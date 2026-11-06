@@ -83,9 +83,9 @@ JLabel y los contenedores de apoyo no cuentan para alcanzar el mínimo solicitad
 
 | Componente nuevo | Dato o acción real que permitirá gestionar | Estado |
 | --- | --- | --- |
-| JSpinner |Gestión precisa del stock | Sin implementar. |
-| JFormattedTextField |Ingreso y validación del precio | Sin implementar. |
-| Ingreso y validación del precio | Filtros rápidos de búsqueda| Sin implementar. |
+| JSpinner |Gestión precisa del stock | Implementado y funcional. |
+| JFormattedTextField |Ingreso y validación del precio | Implementado y funcional. |
+| Ingreso y validación del precio | Filtros rápidos de búsqueda| Implementado y funcional. |
 
 ## Organización de paquetes y recorrido de una operación
 
@@ -330,15 +330,7 @@ verificar como parte de esta actualización.
   pendiente de declarar. Indicar los recursos, su uso concreto y las partes
   correspondientes, o aclarar si no se utilizaron.
 
-## Aportes de cada integrante
 
-| Integrante | Aportes realizados |
-| --- | --- |
-| Pendiente: primer integrante. | Pendiente de registrar aportes concretos. |
-| Pendiente: segundo integrante. | Pendiente de registrar aportes concretos. |
-
-Agregar una tercera fila solamente si corresponde. Todos los integrantes deben
-conocer la solución completa y participar en el video.
 
 ## Video explicativo
 
