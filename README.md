@@ -342,14 +342,7 @@ conocer la solución completa y participar en el video.
 
 ## Video explicativo
 
-**Pendiente de crear y publicar. No hay un video disponible todavía.**
+**Drive**
 
-Enlace público: **pendiente de agregar**.
+Enlace público: **(https://drive.google.com/file/d/1la06_4897td91KNTROT2JVzldhIxSOQq/view?usp=sharing)**.
 
-El video debe durar como máximo cinco minutos, incluir la participación de todos
-los integrantes y mostrar el problema, la aplicación, una validación, los tres
-componentes nuevos, el recorrido de una operación y la conservación de datos.
-
-Lo alojaremos en una plataforma externa, sin subir el archivo al repositorio.
-Antes de entregar, comprobaremos que el enlace permita verlo desde una ventana
-privada, sin iniciar sesión ni solicitar permisos.
